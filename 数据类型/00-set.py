@@ -43,8 +43,22 @@ def _lktest():
     y = set(['d', 'i', 'm', 'i', 't', 'e'])
     y.add("a")
     print(y)
-    laok.dump_description_help(unicode)
+    laok.dump_description_help()
+
+def set_study20230223():
+    s1 = set([1,4,6])
+    s1.add(5)
+    print(s1)
+    s1.add(4)
+    print(s1)
 
 
 if __name__ == '__main__':
-    laok.lktest_run()#catch_except = True
+    # laok.lktest_run()#catch_except = True
+    set_study20230223()
+    fruits_1 = {'apple', 'orange', 'pineapple'}
+    fruits_2 = {'apple', 'orange', 'pineapple', 'water'}
+    print(fruits_1.issubset(fruits_2))
+    print(fruits_2.issubset(fruits_1))
+    print(fruits_1.symmetric_difference(fruits_2))
+    print(fruits_1^fruits_2)

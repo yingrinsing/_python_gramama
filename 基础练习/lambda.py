@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Created on 2017-9-25
+Created on 2017-11-6
 
 @author: yingrinsing
 @github: git@github.com:yingrinsing/python_grammar.git
@@ -10,15 +10,20 @@ Created on 2017-9-25
 """
 
 
+#===============================================================================
+#
+#===============================================================================
 
-#===============================================================================
-# 
-#===============================================================================
-def change(a):
-    a += 3
-    print(a)
+
+def lambda_study20230223():
+    func = lambda x, y: x*y
+    print(func(2, 3))
+    func1 = lambda x: x%3
+    list1 = [func1(x) for x in range(10)]
+    for i in list1:
+        print(i)
+
+
 
 if __name__ == '__main__':
-    a = 2
-    change(a)
-    print(a)
+    lambda_study20230223()
