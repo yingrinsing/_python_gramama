@@ -48,3 +48,8 @@ def _lktest():
 
 if __name__ == '__main__':
     laok.lktest_run()#catch_except = True
+    a = set([])
+    data_list = ['1','1']
+    y = len(list(set(data_list)))
+    print(y)
+    assert len(data_list) != len(set(data_list))

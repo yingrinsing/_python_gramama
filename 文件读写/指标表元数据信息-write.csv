@@ -1,0 +1,7 @@
+表中文名,表物理名,数据可追溯的最初来源说明,字段物理名,单位,频率,字段中文名,数据更新时间,指标分类,来源代码
+利润表,com_profit,,overall_income,元,年,营业总收入,,财务报表,
+利润表,com_profit,,main_income,元,年,营业收入,,财务报表,
+利润表,com_profit,,interest_netincome,元,年,利息净收入,,财务报表,
+利润表,com_profit,,interest_income,元,年,利息收入,,财务报表,
+利润表,com_profit,,interest_cost,元,年,利息支出,,财务报表,
+利润表,com_profit,,commission_netincome,元,年,手续费及佣金净收入,,财务报表,
