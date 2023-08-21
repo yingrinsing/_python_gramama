@@ -16,5 +16,5 @@ if __name__ == '__main__':
     a = [1,3,4,2,1,5]
     b = Counter(a)
     print(b)
-    for i in b:
-        print(i)
+
+    print(b.most_common(1)[0][1])

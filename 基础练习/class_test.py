@@ -52,6 +52,13 @@ class Game:
         print("%s开始玩游戏" % (self.player_name))
         Game.top_score = score if score > Game.top_score else score
 
+    def get_list(self, *listA):
+        listB = []
+        for i in listA:
+            print(i)
+        # listA = [i*2 for i in listA]
+        # return listB
+
 
 if __name__ == '__main__':
     # foo1 = Foo()
@@ -87,3 +94,6 @@ if __name__ == '__main__':
     game3 = Game("王五")
     game3.start_game(100)
     Game.show_top_score()
+    listA = [1,2,4,5]
+    print(game1.get_list(listA))
+    print(listA)
