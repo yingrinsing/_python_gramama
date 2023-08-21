@@ -55,10 +55,13 @@ def set_study20230223():
 
 if __name__ == '__main__':
     # laok.lktest_run()#catch_except = True
-    set_study20230223()
-    fruits_1 = {'apple', 'orange', 'pineapple'}
-    fruits_2 = {'apple', 'orange', 'pineapple', 'water'}
-    print(fruits_1.issubset(fruits_2))
-    print(fruits_2.issubset(fruits_1))
-    print(fruits_1.symmetric_difference(fruits_2))
-    print(fruits_1^fruits_2)
+    # set_study20230223()
+    # fruits_1 = {'apple', 'orange', 'pineapple'}
+    # fruits_2 = {'apple', 'orange', 'pineapple', 'water'}
+    # print(fruits_1.issubset(fruits_2))
+    # print(fruits_2.issubset(fruits_1))
+    # print(fruits_1.symmetric_difference(fruits_2))
+    # print(fruits_1^fruits_2)
+    a="abc"
+    b="bac"
+    print(set(a)==set(b))
