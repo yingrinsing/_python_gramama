@@ -42,4 +42,12 @@ if __name__ == '__main__':
         "name": "wangning",
         "age": 13
     }
+    dict1.update(dict2)
+    print(dict1)
+    print(dict2.get("sex", "未知"))
+    dict2.popitem()
     print(dict2)
+    dict2.setdefault("name","guying")
+    print(dict2)
+    dict3 = dict.fromkeys(["name","age","sex"], "")
+    print(dict3)

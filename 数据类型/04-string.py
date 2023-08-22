@@ -67,7 +67,7 @@ def _lktest():
     print(index)
     
     if "a" in x:
-        print "contain"
+        print("contain")
         
     keyword = "营业总收入单季同比"
     compare_str = '单季|单季度|同比|环比'
@@ -78,7 +78,7 @@ def _lktest():
     all = re.findall(compare_str,keyword)
     print(all[1])
     if re.search(compare_str,keyword):
-        print "OK"
+        print("OK")
     spli = re.split(compare_str,keyword)
     sp = filter(is_even,spli)
     print(sp)
@@ -123,13 +123,31 @@ def _lktest():
     keyword = "单季度净利润"
     str = "单季度"
     index1=keyword.find(str)
-    print index1
+    print(index1)
     index2 = keyword.rfind(str)
-    print index2
+    print(index2)
     
     one = ' '.join(['r','i'])
     print(one)
     print("%s return error code is %s" % (one,one))
 
+def study20230222():
+    str1 = "guying"
+    is_contain = str1.find("i")
+    print(is_contain)
+    print(str1.find("a"))
+    s = "hello,world"
+    print(s[:])
+    print(s[::-1])
+    print(s[:-3:-1])
+    print(s[-2:])
+
+def study20230223():
+    username = 'Lili'
+    print(f'{username:>20}--------------')
+    score =100
+    print('{0}的成绩是{1}'.format(username,score))
+
 if __name__ == '__main__':
-    laok.lktest_run()#catch_except = True
+    # laok.lktest_run()#catch_except = True
+    study20230223()

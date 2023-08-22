@@ -24,7 +24,7 @@ import laok
 def _lktest():
     try:
         float(['a',1])
-    except Exception, diag:
+    except Exception as diag:
         pass
     print('[%s]:[%s]' % (diag,type(diag)))
     shuxing = diag.__class__

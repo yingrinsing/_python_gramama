@@ -16,14 +16,12 @@ Created on 2017-11-6
 
 
 def basic_for():
-    for i in xrange(3):  
-        for j in xrange(6):
-            print i, j
-            if j == 3:
-                break  
-        else:  
-            continue  
-        break
+    for i in range(3):
+        for j in range(6):
+            print(i, j)
+        else:
+            print("执行else")
+            break
 
 
 if __name__ == '__main__':
