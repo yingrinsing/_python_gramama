@@ -12,6 +12,8 @@ from codecs import open
 import csv
 import ssl
 
+from TestTools.resolution_test_tool.resolution_test import is_resolution, is_resolution_old
+
 ssl._create_default_https_context = ssl._create_unverified_context
 
 
@@ -52,14 +54,14 @@ def write_csv(filename, iter_data):
 
 
 def read_csv_lktest():
-    iter_data = read_csv(u"指标表元数据信息.csv")
+    iter_data = read_csv(u"../../文件读写/指标表元数据信息.csv")
     for i, data in enumerate(iter_data):
-        print i, u" ".join(u"%s:%s" % item for item in data.iteritems())
+        print(i, u" ".join(u"%s:%s" % item for item in data.iteritems()))
 
 
 def write_csv_lktest():
-    iter_data = read_csv(u"指标表元数据信息.csv")
-    write_csv(u"指标表元数据信息-write.csv", iter_data)
+    iter_data = read_csv(u"../../文件读写/指标表元数据信息.csv")
+    write_csv(u"../../文件读写/指标表元数据信息-write.csv", iter_data)
 
 
 # 写文件
@@ -80,9 +82,9 @@ def write_file(filename, msg):
 
 if __name__ == '__main__':
 
-    iter_resolution = read_csv('导入分辨率.csv',',')
+    iter_resolution = read_csv('导入分辨率.csv', ',')
     fmt_line = False
-    filename = 'result.csv'
+    filename = '../../文件读写/result.csv'
     header = 'width,height,is_resolution_new,is_resolution_old,result,malv_new,malv_old,result1\n'
     with open(filename=filename, mode='w', encoding='utf8') as f:
         for data in iter_resolution:

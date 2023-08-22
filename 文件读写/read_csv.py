@@ -10,7 +10,6 @@ Created on 2017-10-18
 """
 import os
 from codecs import open
-import laok
 from pprint import pprint
 #===============================================================================
 # 
@@ -46,7 +45,7 @@ def write_csv(filename, iter_data):
 def read_csv_lktest():
     iter_data = read_csv(u"指标表元数据信息.csv")
     for i,data in enumerate(iter_data):
-        print i,u" ".join(u"%s:%s"%item for item in data.iteritems() )
+        print(i,u" ".join(u"%s:%s"%item for item in data.iteritems()))
      
 def write_csv_lktest():
     iter_data = read_csv(u"指标表元数据信息.csv")
@@ -64,7 +63,7 @@ def write_file(filename, msg):
 
 if __name__ == '__main__':
     #laok.lktest_run('')#catch_except = True
-    # read_csv_lktest()
+    test= read_csv_lktest()
 
 
     filename = "totest.txt"
