@@ -35,6 +35,19 @@ import laok
     #viewkeys [<type 'builtin_function_or_method'>] [D.viewkeys() -> a set-like object providing a view on D's keys]
     #viewvalues [<type 'builtin_function_or_method'>] [D.viewvalues() -> an object providing a view on D's values]
 
+def sort_list_dict():
+    info = [{"name": "张三", "age": 4}, {"name": "李四", "age": 5}, {"name": "王五", "age": 1}]
+    v = sorted(info, key=lambda s: s["age"], reverse=True)
+    print(v)
+
+def sort_dict():
+    dict_data = {'form': 2, 'table': 1, 'file': 3}
+    v1 = sorted(dict_data.items(), key=lambda x:x[0])
+    print(v1)
+    v2 = sorted(dict_data.items(), key=lambda x: x[1])
+    print(v2)
+
+
 if __name__ == '__main__':
     dict1 = {}
     print(dict1)
@@ -51,3 +64,7 @@ if __name__ == '__main__':
     print(dict2)
     dict3 = dict.fromkeys(["name","age","sex"], "")
     print(dict3)
+
+    sort_dict()
+    sort_list_dict()
+
