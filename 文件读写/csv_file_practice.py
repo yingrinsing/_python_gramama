@@ -67,6 +67,14 @@ def write_file_csv_dict(read_file, write_file):
             #     change_data[field] = data[field]+"你好"
             csv_writer.writerow(change_data)
 
+_cache_file = {}
+def write_file(filename, msg):
+    if filename not in _cache_file:
+        _cache_file[filename] = open(filename, mode='a', encoding='utf-8')
+    # print(filename)
+    # _cache_file[filename].write(codecs.BOM_UTF8)
+    _cache_file[filename].write("%s\n" % msg)
+    _cache_file[filename].flush()
 
 if __name__ == '__main__':
     filename = "指标表元数据信息.csv"
