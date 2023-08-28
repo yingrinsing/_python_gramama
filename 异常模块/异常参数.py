@@ -10,7 +10,7 @@ Created on 2017-9-30
 """
 
 
-import laok
+
 #===============================================================================
 # 
 #===============================================================================
@@ -21,7 +21,7 @@ import laok
 #funcs/method---->
     #__init__(...) ==>x.__init__(...) initializes x; see help(type(x)) for signature
     
-def _lktest():
+def lktest():
     try:
         float(['a',1])
     except Exception as diag:
@@ -34,9 +34,8 @@ def _lktest():
     print(name)
     print(doc)
     obj = name
-    laok.dump_description_help(obj)
     
 
 
 if __name__ == '__main__':
-    laok.lktest_run()#catch_except = True
+    lktest()#catch_except = True
