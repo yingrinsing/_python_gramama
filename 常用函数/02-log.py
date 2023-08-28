@@ -10,18 +10,13 @@ Created on 2017-10-25
 """
 
 
-import laok
+
 import logging
 #===============================================================================
 # 
 #===============================================================================
-def _lktest():
-    obj = None
-    laok.dump_description_help(obj)
-
 
 if __name__ == '__main__':
-    laok.lktest_run()#catch_except = True
     #logging.basicConfig(level=logging.INFO)
     #logging.basicConfig(level=logging.DEBUG)
     logger = logging.getLogger(__name__)

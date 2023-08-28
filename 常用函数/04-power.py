@@ -10,20 +10,19 @@ Created on 2017-11-1
 """
 
 
-import laok
+
 from numpy import power
 #===============================================================================
 # 
 #===============================================================================
 def _lktest():
     obj = None
-    laok.dump_description_help(obj)
     list = [  0,   1,   8,  27,  64, 125]
     
     a = power(list,1.0/3)
-    print a
+    print(a)
     b = power(10000000/19,1.0/3)
-    print b,int(b)
+    print(b,int(b))
     
 def get_value(n):  
     if n==1:  
@@ -33,11 +32,11 @@ def get_value(n):
           
 def gen_last_value(n,m):  
      first = get_value(n)  
-     print "n:%s     value:%s"%(n, first)  
+     print("n:%s     value:%s"%(n, first) )
      second = get_value(m)  
-     print "n:%s     value:%s"%(m, second)  
+     print("n:%s     value:%s"%(m, second))
      third = get_value((n-m))  
-     print "n:%s     value:%s"%((n-m), third)  
+     print("n:%s     value:%s"%((n-m), third))
      return first/(second * third)  
  
 import copy    #实现list的深复制
@@ -60,4 +59,4 @@ if __name__ == "__main__":
     # C(12,5)  
     #rest = gen_last_value(3000,1)  
     #print "value:", rest 
-    print combine(3000,2)
+    print(combine(3000,2))

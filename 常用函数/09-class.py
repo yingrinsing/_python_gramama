@@ -7,25 +7,25 @@
 """  
   
 def do_foo():  
-    print "foo!"  
+    print("foo!")
    
 def do_bar():  
-    print "bar!"  
+    print("bar!")
   
 class Print():  
     def do_foo(self):  
-        print "foo!"  
+        print("foo!")
    
     def do_bar(self):  
-        print "bar!"  
+        print("bar!")
   
     @staticmethod  
     def static_foo():  
-        print "static foo!"  
+        print("static foo!")
   
     @staticmethod  
     def static_bar():  
-        print "static bar!"  
+        print("static bar!")
   
 def main():  
     obj = Print()  

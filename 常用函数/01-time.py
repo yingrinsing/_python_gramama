@@ -10,7 +10,7 @@ Created on 2017-10-11
 """
 
 
-import laok
+
 import time
 #===============================================================================
 # 
@@ -51,8 +51,7 @@ def dateTimeToTimeStamp(dateTime):
 
 
 if __name__ == '__main__':
-    laok.lktest_run()
     timeStampToDateTime(1506268800)
     dateTimeToTimeStamp("2016-10-09 23:40:00")
     date1 = '2016-10-09 23:40:00'
-    print date1[0:10]
+    print(date1[0:10])

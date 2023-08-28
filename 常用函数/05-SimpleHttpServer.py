@@ -10,6 +10,7 @@ Created on 2017-11-3
 """
 import SimpleHTTPServer
 import sys
+import socket, webbrowser
 #===============================================================================
 # 
 #===============================================================================
@@ -18,9 +19,9 @@ if len(sys.argv) == 1:
     sys.argv.append('80')
 
 #打开网页
-import socket, webbrowser
-print socket.gethostname()
-print socket.gethostbyname(socket.gethostname())
+
+print(socket.gethostname())
+print(socket.gethostbyname(socket.gethostname()))
 url = "http://%s" % socket.gethostbyname(socket.gethostname())
 webbrowser.open(url)
 

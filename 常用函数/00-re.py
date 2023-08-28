@@ -10,7 +10,7 @@ Created on 2017-10-9
 """
 
 
-import laok
+
 import re
 import os
 from codecs import open
@@ -62,7 +62,7 @@ def sub_function():
     pat = '^indicators:=([0-9]+,){3}([0-9])$'
     new_pat ='indicators:=2,0,0,0'
     news=re.sub(pat, new_pat, s)                       # 正则部分替换，将s中的所有符合pat的全部替换为newpat，newpat也可以是函数
-    print news
+    print(news)
 
 
 def search():
@@ -71,7 +71,7 @@ def search():
 #     if re.search(pattern,s):
 #         print 'success'
     s = [re.sub('.[a-zA-Z]+','',n) if re.search('.[A-Za-z]+',n) else n for n in s]
-    print s
+    print(s)
 
 
 def findall():
@@ -82,33 +82,31 @@ def findall():
     t_unicode = t.decode('UTF-8')
     #t1 = re.findall(u"<font color='red'>[\u4e00-\u9fa5|a-z|A-Z]+</font>", t_unicode)
     t1 = re.findall(u"<font color='red'>(.+?)</font>", t_unicode)
-    print ''.join(t1)
+    print(''.join(t1))
     for i in t1:
-        print i
+        print(i)
 
 
 def chinese():
     source=u"数据结构模版----单链表SimpleLinkList[带头结点&&面向对象设计思想](C语言实现)"
     temp=source.decode('utf8')
-    print "同时匹配中文英文"
-    print "--------------------------"
+    print("同时匹配中文英文")
+    print("--------------------------")
     xx=u"([\w\W\u4e00-\u9fff]+)"
     pattern = re.compile(xx)
     results = pattern.findall(temp)
     for result in results:
-        print result
-    print "--------------------------"
-    print
-    print
-    print "只匹配中文"
-    print "--------------------------"
+        print(result)
+    print("--------------------------")
+    print("只匹配中文")
+    print("--------------------------")
     xx      =   u"([\u4e00-\u9fff]+)"
     pattern =   re.compile(xx)
     results =   pattern.findall(temp)
 
     for result in results:
-        print result
-    print "--------------------------"
+        print(result)
+    print("--------------------------")
 
 
 def ppl():
@@ -119,9 +117,9 @@ def ppl():
     t_unicode = t.decode('UTF-8')
     #t1 = re.findall(u"<font color='red'>[\u4e00-\u9fa5|a-z|A-Z]+</font>", t_unicode)
     t1 = re.findall(u"[\u4e00-\u9fa5|a-z|A-Z|0-9]+/n", t_unicode)
-    print ''.join(t1)
+    print(''.join(t1))
     for i in t1:
-        print i
+        print(i)
 
 
 def read_file(filename, encode=None):

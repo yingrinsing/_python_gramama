@@ -90,12 +90,12 @@ if __name__ == "__main__":
     argv = sys.argv
 
     if len(argv) != 6:
-        print "Usage:%s     " % (argv[0])
-        print "\tsalary:月薪"
-        print "\tremission:每月减免额度，如租房、子女教育等"
-        print "\tovertime-pay-factor:每年加班费折算月数"
-        print "\tsalary-incr-factor:4月调薪增幅"
-        print "\tyear-end-bonus-factor:年终奖月数"
+        print("Usage:%s     " % (argv[0]))
+        print("\tsalary:月薪")
+        print("\tremission:每月减免额度，如租房、子女教育等")
+        print("\tovertime-pay-factor:每年加班费折算月数")
+        print("\tsalary-incr-factor:4月调薪增幅")
+        print("\tyear-end-bonus-factor:年终奖月数")
         sys.exit(0)
 
     salary = float(argv[1])
@@ -109,6 +109,6 @@ if __name__ == "__main__":
     merge = month_salary_after_tax(salary, remission, overtime_pay_factor,
                                    salary_incr_factor) + year_end_bonus_after_tax(salary, year_end_bonus_factor)
 
-    print "分开发放：%d" % (split)
-    print "合并发放：%d" % (merge)
-    print "合并发放 - 分开发放：%d" % (merge - split)
+    print("分开发放：%d" % (split))
+    print("合并发放：%d" % (merge))
+    print("合并发放 - 分开发放：%d" % (merge - split))

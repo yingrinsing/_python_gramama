@@ -12,7 +12,7 @@ Created on 2017-9-25
 
 import sys
 import os
-import laok
+
 #===============================================================================
 # 
 #===============================================================================
@@ -63,11 +63,5 @@ import laok
     #walk(top, func, arg) [Directory tree walk with callback function.]    
 
 
-def _lktest():
-    obj = os.path
-    laok.dump_description_help(obj)
-
-
 if __name__ == '__main__':
-    # print sys.path
-    laok.lktest_run()
+    print(sys.path)

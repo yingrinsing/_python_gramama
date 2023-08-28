@@ -10,18 +10,16 @@ Created on 2017-11-23
 """
 
 
-import laok
+
 import numpy
 #===============================================================================
 # 
 #===============================================================================
-def _lktest():
-    obj = None
-    laok.dump_description_help(obj)
-    
+
 def isnan1():
     if 'ut' == numpy.nan:
-            print 'ut'
+            print('ut')
     print ('ut' == numpy.nan)
+
 if __name__ == '__main__':
-    laok.lktest_run()#catch_except = True
+   isnan1()

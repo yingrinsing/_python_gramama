@@ -10,7 +10,7 @@ Created on 2017-9-30
 """
 
 
-import laok
+
 #===============================================================================
 # 
 #===============================================================================
@@ -63,11 +63,7 @@ import laok
     #Warning[<type 'type'>] [<type 'exceptions.Warning'>]
     #WindowsError[<type 'type'>] [<type 'exceptions.WindowsError'>]
     #ZeroDivisionError[<type 'type'>] [<type 'exceptions.ZeroDivisionError'>]
-def _lktest():
-    obj = None
-    laok.dump_description_help(obj)
-    
 
 
 if __name__ == '__main__':
-    laok.lktest_run()#catch_except = True
+    print("异常类型")#catch_except = True
